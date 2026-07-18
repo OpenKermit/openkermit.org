@@ -8,6 +8,21 @@ set -x
 rm -fr public
 mkdir public
 
+git submodule init
+
+if [ ! -d external/ckermit/doc ]; then
+	pushd external/ckermit
+	git submodule update
+	popd
+fi
+
+
+if [ ! -f themes/fluency/theme.toml ]; then
+	pushd themes/fluency
+	git submodule update
+	popd
+fi
+
 # We assemble the Markdown tree in content for hugo to ingest.
 rm -rf content
 
