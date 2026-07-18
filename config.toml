@@ -54,6 +54,7 @@ name = "John Goerzen"
   #footnote = "Follow me on <a class=link href=https://github.com/francescotonini>GitHub</a> or <a class=link href=https://twitter.com/toninifrancesco>Twitter</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
   keywords = ["hugo", "latex", "theme"]
   disableComment = true
+  disableAnchorHeading = true
   mainSections = ["posts", "pics"]
   copyright = "(c) 2026 John Goerzen"
 
