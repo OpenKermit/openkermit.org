@@ -1,0 +1,6 @@
+[submodule "themes/fluency"]
+	path = themes/fluency
+	url = https://github.com/jgoerzen/hugo-theme-fluency.git
+[submodule "external/ckermit"]
+	path = external/ckermit
+	url = https://github.com/openkermit/ckermit.git

@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<main>
+    <div id="search-results"></div>
+    <div class="search-loading">Loading...</div>
+
+    <script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+        <h3><a href="${link}">${title}</a></h3>
+        <p>${snippet}</p>
+    </div>
+    </script>
+
+    <script src="/search/fuse.min.js"></script>
+    <script src="/search/mark.min.js"></script>
+</main>
+
+{{ end }}

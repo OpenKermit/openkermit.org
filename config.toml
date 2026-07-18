@@ -1,3 +1,80 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://www.openkermit.org/"
+languageCode = "en-US"
+paginate = 4
+theme = "fluency"
+title = "Open Kermit Project"
+refLinksErrorLevel = "WARNING"
+
+disqusShortname = ""
+googleAnalytics = ""
+pygmentsUseClasses = true
+
+[author]
+name = "John Goerzen"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "interesting"
+  name = "Interesting Topics"
+  url = "/interesting-topics/"
+  weight = 1
+[[menu.main]]
+  identifier = "how"
+  name = "How This Site Is Built"
+  url = "/how-this-site-is-built/"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About John Goerzen"
+  url = "/john-goerzen/"
+  weight = 3
+
+[[menu.footer]]
+  identifier = "aboutsite"
+  url = "/how-this-site-is-built/"
+  name = "About This Site"
+  weight = 1
+
+[[menu.footer]]
+  identifier = "about"
+  url = "/john-goerzen/"
+  name = "About John"
+  weight = 2
+
+
+[params]
+  custom_css = []
+  description = "Information on a wide range of topics by John Goerzen"
+  enable_mathjax = false
+  #footnote = "Follow me on <a class=link href=https://github.com/francescotonini>GitHub</a> or <a class=link href=https://twitter.com/toninifrancesco>Twitter</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
+  keywords = ["hugo", "latex", "theme"]
+  disableComment = true
+  mainSections = ["posts", "pics"]
+  copyright = "(c) 2026 John Goerzen"
+
+[taxonomies]
+  series = "series"
+  tag = "tags"
+  category = "categories"
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+

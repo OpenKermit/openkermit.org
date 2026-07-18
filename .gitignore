@@ -1,32 +1,8 @@
 *~
 *.swp
 \#*
-*.html
-!data/**/*.html
-!roam/data/**/*.html
-!roam/**/data/**/*.html
-*.txt
-!data/**/*.txt
-!roam/data/**/*.txt
-!roam/**/data/**/*.txt
-*.odt
-!data/**/*.odt
-!roam/data/**/*.odt
-!roam/**/data/**/*.odt
-*.pdf
-!data/**/*.pdf
-!roam/data/**/*.pdf
-!roam/**/data/**/*.pdf
-*.tex
-!data/**/*.tex
-!roam/data/**/*.tex
-!roam/**/data/**/*.tex
-*.el
-!data/**/*.el
-!roam/data/**/*.el
-!roam/**/data/**/*.el
-.tag-*
-.\#*
-roam/org-roam.db
-.orgids
+.hugo_build.lock
+public/
+resources/
+content/
 
