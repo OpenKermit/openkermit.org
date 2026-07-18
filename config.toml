@@ -19,25 +19,30 @@ name = "John Goerzen"
       unsafe = true
 
 [[menu.main]]
-  identifier = "interesting"
-  name = "Interesting Topics"
-  url = "/interesting-topics/"
+  identifier = "downloads"
+  name = "Get Kermit"
+  url = "/downloads/"
   weight = 1
 [[menu.main]]
-  identifier = "how"
-  name = "How This Site Is Built"
-  url = "/how-this-site-is-built/"
+  identifier = "doc"
+  name = "Documentation"
+  url = "/doc/"
   weight = 2
 [[menu.main]]
-  identifier = "about"
-  name = "About John Goerzen"
-  url = "/john-goerzen/"
+  identifier = "support"
+  name = "Support"
+  url = "/support/"
   weight = 3
+[[menu.main]]
+  identifier = "about"
+  name = "About This Site"
+  url = "/how-this-site-is-built/"
+  weight = 4
 
 [[menu.footer]]
-  identifier = "aboutsite"
-  url = "/how-this-site-is-built/"
-  name = "About This Site"
+  identifier = "copyright"
+  url = "/about-this-site/"
+  name = "Copyright and License"
   weight = 1
 
 [[menu.footer]]
