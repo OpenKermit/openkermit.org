@@ -39,7 +39,7 @@ find content -name '*.md' -exec \
 # Prep the content brought in from the ckermit repo
 cp -r external/ckermit/doc content/ckermit
 
-# The ckermit docs carry no Hugo front matter at all, so Hugo has no title
+# The ckermit docs carry no Hugo front matter, so Hugo has no title
 # for them (breaking <title>, the search index, etc). Give every page a
 # title (from its first top-level Markdown heading) and the same
 # slug/author/tags/draft front matter used elsewhere on this site.

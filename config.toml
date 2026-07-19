@@ -17,6 +17,9 @@ name = "John Goerzen"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        useEmbedded = "always"
 
 [[menu.main]]
   identifier = "downloads"
