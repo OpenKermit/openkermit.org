@@ -14,7 +14,7 @@ Kermit has been around since 1981.  Open Kermit is the third project to continue
 
 Here are some starting points:
 
-- [Getting Kermit and Downloads](downloads), including links to Github source and binaries
+- [Getting Kermit and Downloads](downloads), including links to Github source and binaries.  This will guide you to downloads for both modern and historical platforms.
 - [Documentation](doc)
 - [Getting Started](getting-started)
 - [Support and Forum](support)
