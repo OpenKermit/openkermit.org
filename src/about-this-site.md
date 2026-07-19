@@ -12,15 +12,11 @@ For the web, searching is based on [this example by Edd Turtle](https://makewith
 
 [Hugo](https://gohugo.io/) renders the Markdown into HTML.  The theme is a lightly-modified [Fluency](https://github.com/wayjam/hugo-theme-fluency).
 
-These files are served by [Apache](https://httpd.apache.org/) running on [Debian]({{< relref "20220128074601-debian" >}}).
-
-
 ### JavaScript used here {#javascript-used-here}
 
 JavaScript used here is served locally and is completely optional.  Functionally, it is used to power the client-side search engine, but that's all.  No JavaScript will simply cause the search to break, but everything else continues to work.
 
-I have tried to ensure all embedded JavaScript is [Free Software]({{< relref "20220128075132-free_software" >}}).
-
+I have tried to ensure all embedded JavaScript is [Free Software](https://www.complete.org/free-software/ ).
 
 # Site License {#site-license}
 

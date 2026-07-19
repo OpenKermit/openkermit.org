@@ -1,5 +1,4 @@
 baseURL = "https://www.openkermit.org/"
-languageCode = "en-US"
 paginate = 4
 theme = "fluency"
 title = "Open Kermit Project"
@@ -8,6 +7,9 @@ refLinksErrorLevel = "WARNING"
 disqusShortname = ""
 googleAnalytics = ""
 pygmentsUseClasses = true
+
+[language]
+locale = "en-US"
 
 [author]
 name = "John Goerzen"
@@ -49,17 +51,15 @@ name = "John Goerzen"
   weight = 1
 
 [[menu.footer]]
-  identifier = "about"
-  url = "/john-goerzen/"
-  name = "About John"
+  identifier = "github"
+  url = "https://github.com/openkermit"
+  name = "Github"
   weight = 2
-
 
 [params]
   custom_css = []
-  description = "Information on a wide range of topics by John Goerzen"
+  description = "Home of continuing development of C-Kermit"
   enable_mathjax = false
-  #footnote = "Follow me on <a class=link href=https://github.com/francescotonini>GitHub</a> or <a class=link href=https://twitter.com/toninifrancesco>Twitter</a> | <a class=link href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed target=_blank rel=noopener>CC BY-NC-SA 4.0</a>"
   keywords = ["hugo", "latex", "theme"]
   disableComment = true
   disableAnchorHeading = true

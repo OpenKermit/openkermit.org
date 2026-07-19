@@ -90,6 +90,15 @@ find content/ckermit -name '*.md' -exec \
     sed -i -E -e 's/\]\(([A-Za-z0-9_-]+)\.md#([A-Za-z0-9_-]+)\)/]({{< relref "\1">}}#\2)/g' \
     -e 's/\]\(([A-Za-z0-9_-]+)\.md\)/]({{< relref "\1">}})/g' {} +
 
+# The ckermit docs also embed images that live alongside the .md source,
+# e.g. ![alt](bbs-example.png). Every ckermit page except _index.md
+# (the README) gets a Hugo pretty URL one directory deeper than where
+# these images land (content/ckermit/<slug>/ vs content/ckermit/), so
+# the same-directory reference that works on GitHub breaks under Hugo.
+# Prefix such image links with ../ to account for that extra nesting.
+find content/ckermit -name '*.md' ! -name '_index.md' -exec \
+    sed -i -E 's/!\[([^]]*)\]\(([A-Za-z0-9_-]+\.(png|jpg|jpeg|gif|svg))\)/![\1](..\/\2)/g' {} +
+
 
 # And run the regeneration
 hugo --gc
