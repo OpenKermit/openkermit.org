@@ -90,6 +90,21 @@ find content/ckermit -name '*.md' -exec \
     sed -i -E -e 's/\]\(([A-Za-z0-9_-]+)\.md#([A-Za-z0-9_-]+)\)/]({{< relref "\1">}}#\2)/g' \
     -e 's/\]\(([A-Za-z0-9_-]+)\.md\)/]({{< relref "\1">}})/g' {} +
 
+# The ckermit docs also carry full links back to this site (needed so the
+# links work when the docs are viewed on Github), e.g.
+# [downloads](https://www.openkermit.org/downloads/) or
+# <https://www.openkermit.org/ckermit/>. Rewrite these to Hugo relref
+# shortcodes so they become local links instead of round-tripping through
+# the live site. The root page (https://www.openkermit.org/) has no path
+# segment to use as a relref target, so it's special-cased to "/".
+find content/ckermit -name '*.md' -exec \
+    sed -i -E \
+    -e 's#<https://www\.openkermit\.org/>#[https://www.openkermit.org/]({{< relref "/" >}})#g' \
+    -e 's#<(https://www\.openkermit\.org/([A-Za-z0-9_-]+)/?)>#[\1]({{< relref "\2" >}})#g' \
+    -e 's#\]\(https://www\.openkermit\.org/\)#]({{< relref "/" >}})#g' \
+    -e 's#\]\(https://www\.openkermit\.org/([A-Za-z0-9_-]+)/?\)#]({{< relref "\1" >}})#g' \
+    {} +
+
 # The ckermit docs also embed images that live alongside the .md source,
 # e.g. ![alt](bbs-example.png). Every ckermit page except _index.md
 # (the README) gets a Hugo pretty URL one directory deeper than where
