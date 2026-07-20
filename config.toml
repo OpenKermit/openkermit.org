@@ -42,7 +42,7 @@ name = "John Goerzen"
 [[menu.main]]
   identifier = "about"
   name = "About This Site"
-  url = "/how-this-site-is-built/"
+  url = "/about-this-site/"
   weight = 4
 
 [[menu.footer]]
