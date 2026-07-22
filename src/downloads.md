@@ -24,9 +24,22 @@ For modern C-Kermit, binaries are built for:
 - macOS
 - FreeBSD, NetBSD, and OpenBSD
 
-Except for macOS, all other platforms build binaries for both x86-64 (amd64) and 64-bit ARM (arm64).  In almost all cases, you will want the amd64 version.
+Except for macOS, all other platforms build binaries for both x86-64 (amd64) and
+64-bit ARM (arm64).  In almost all cases, you will want the amd64 version.
 
-Linux binaries are additionally available in a static build, linked against musl libc.  These have no dependencies from the running system, and thus should be portable to many versions and distributions of Linux in the chosen architecture.  However, since they do not use the system's libraries (such as OpenSSL), they don't benefit from security updates that your distribution may make to system libraries like OpenSSL.  Therefore, I recommend not using SSL facilities on the static binaries.  (Very few people use SSL in Kermit these days anyhow)  The static binaries are helpful for bootstrapping connectivity to a new (or old!) system, for instance.
+Linux binaries are additionally available in a static build, linked against musl
+libc.  These have no dependencies from the running system, and thus should be
+portable to many versions and distributions of Linux in the chosen architecture.
+However, since they do not use the system's libraries (such as OpenSSL), they
+don't benefit from security updates that your distribution may make to system
+libraries like OpenSSL.  Therefore, I recommend not using SSL facilities on the
+static binaries.  (Very few people use SSL in Kermit these days anyhow)  The
+static binaries are helpful for bootstrapping connectivity to a new (or old!)
+system, for instance.
+
+While the statically-linked version does have ncurses built in, C-Kermit
+degrades gracefully if you lack a terminfo database.  Therefore, it is a truly
+standalone binary.
 
 ### Verification
 
