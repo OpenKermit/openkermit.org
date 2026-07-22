@@ -16,6 +16,38 @@ The other active Kermit project is [Kermit 95](https://davidrg.github.io/ckwin/)
 
 Vanilla C-Kermit uses operating system facilities to provide such things as SSH and terminal emulation.  These have historically not been built in to Windows or OS/2, so Kermit 95 is a GUI application providing its own terminal emulation and ssh client.
 
+### Selecting binaries
+
+For modern C-Kermit, binaries are built for:
+
+- Several Linux platforms
+- macOS
+- FreeBSD, NetBSD, and OpenBSD
+
+Except for macOS, all other platforms build binaries for both x86-64 (amd64) and 64-bit ARM (arm64).  In almost all cases, you will want the amd64 version.
+
+Linux binaries are additionally available in a static build, linked against musl libc.  These have no dependencies from the running system, and thus should be portable to many versions and distributions of Linux in the chosen architecture.  However, since they do not use the system's libraries (such as OpenSSL), they don't benefit from security updates that your distribution may make to system libraries like OpenSSL.  Therefore, I recommend not using SSL facilities on the static binaries.  (Very few people use SSL in Kermit these days anyhow)  The static binaries are helpful for bootstrapping connectivity to a new (or old!) system, for instance.
+
+### Verification
+
+Once you've downloaded a binary, you can run:
+
+`sha256sum binary-name`
+
+Compare it to the SHA256SUMS file to ensure your download wasn't corrupted.
+
+### Installation
+
+Two commands will do it:
+
+```
+mv kermit-platform-version kermit
+chmod a+x kermit
+```
+
+The first renames whatever you downloaded to `kermit`, and the second marks it executable.  I recommend you now put it in some location on your `$PATH`, such as `/usr/local/bin`.
+
+
 ## Historical and Other Platforms
 
 Kermit is one of the most widely-implemented protocols in history.  Many implementations were made over the decades, in many different programming langauges (some of which themselves are now defunct as well.)  See [history](history) for more details.

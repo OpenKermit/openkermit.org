@@ -1,7 +1,7 @@
 +++
 title = "Kermit FAQ"
 author = ["John Goerzen"]
-slug = "downloads"
+slug = "faq"
 tags = ["public"]
 draft = false
 +++
@@ -73,6 +73,23 @@ major work done in 11.0; it's not just the last 10.x beta rebadged.
 The [changelog](changelog.md) also contains a summary of all the work done in
 the 9.x and 10.x series since 9.0.302.
 
+## Is the command-line interface derived from DOS?
+
+No.  The [first Kermit implementation was for
+TOPS-20](https://www.kermitproject.org/kermit-20.html), and that inspired the
+Kermit interface.  TOPS-20 also inspired OpenVMS, CP/M, and DOS, which in turn
+carried on into Windows.
+
+In particular, C-Kermit's CLI is much more powerful than DOS ever had, and its
+scripting language is more akin to a full-featured Unix shell than a DOS batch
+file.
+
+C-Kermit primarily runs on Unix these days, and you can also see plenty of Unix
+mannerisms in it also.
+
+If you think of it like a `--` long option in Unix is similar to a `/` option in
+Kermit, you'll be set.
+
 ## What platforms does Kermit run on?
 
 Pretty much every single one you've ever heard of, plus a bunch you haven't.
@@ -89,8 +106,20 @@ it's not a regression.)
 Hundreds of additional platforms have been supported by C-Kermit as well as
 other codebases over the years.
 
+There have been plenty of other Kermit implementations besides C-Kermit.  For
+instance, [Kermit 20](https://www.kermitproject.org/kermit-20.html) was the
+first Kermit implementation, and it was for the TOPS-20 operating system, which
+was introduced in 1976 and ended in 1988.  The last Kermit release for it was
+made in 2024!  You can probably find Kermit for your favorite old Unix or Micro;
+it's there for Commodore 64, for IBM mainframes, Android phones, just about
+anything.
+
 The [getting Kermit](downloads) page can direct you to downloads for everything,
 old and new.
+
+## Where is there more information?
+
+See the [documentation page](doc).
 
 ## Where can I get help, submit a bug report, or discuss Kermit?
 
@@ -131,10 +160,6 @@ it remains included in a number of Linux distributions and BSD port trees.
 E-Kermit was designed for use in embedded devices, firmware, and so forth.  It
 is not actively maintained, but likely remains useful for the purpose.  For more
 information, see <https://www.kermitproject.org/ek.html>.
-
-## Where is there more information?
-
-See the [documentation page](doc).
 
 ## Older questions
 
