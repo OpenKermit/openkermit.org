@@ -52,7 +52,7 @@ had previously been maintaining and distributing security patches to
 distributions, and this was getting unwieldy.  The modern evolution included
 writing a test suite, proper CI, compatibility fixes for modern platforms,
 hosting on Github, and a website (this one) that is easy for a community to
-maintain.  You can see all the work for C-Kermit 11 in the [changelog](changelog.md).
+maintain.  You can see all the work for C-Kermit 11 in the [changelog](ckermit/changelog).
 
 Both Columbia and Kermit Project's websites continue to be operational.  With
 Frank's permission, John also operates mirrors of the Columbia and Kermit
@@ -70,7 +70,7 @@ Due to the potentially-confusing history of 9.x and 10.x numbering, I opted to
 just start fresh at 11.0.  This also is an accurate indication that there was
 major work done in 11.0; it's not just the last 10.x beta rebadged.
 
-The [changelog](changelog.md) also contains a summary of all the work done in
+The [changelog](ckermit/changelog) also contains a summary of all the work done in
 the 9.x and 10.x series since 9.0.302.
 
 ## Is the command-line interface derived from DOS?
