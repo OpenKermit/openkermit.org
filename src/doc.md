@@ -10,10 +10,10 @@ draft = false
 
 These are the latest and most up-to-date documents.
 
-- [Kermit Introduction and Tour](ckermit/intro), contains a feature list, description of Kermit modes, a tour of Kermit as a ssh wrapper, tuning, and so forth.
+- [Kermit Introduction and Tour](../ckermit/intro), contains a feature list, description of Kermit modes, a tour of Kermit as a ssh wrapper, tuning, and so forth.
 - [C-Kermit downloads](downloads)
 - [C-Kermit docs and notes](ckermit)
-- [C-Kermit reference](ckermit/help-reference), which is auto-generated from the C-Kermit source
+- [C-Kermit reference](../ckermit/help-reference), which is auto-generated from the C-Kermit source
 - John Goerzen's pages about IKSD, the Internet Kermit Server Daemon, all offsite on www.complete.org:
   - [Try the Last Internet Kermit Server](https://www.complete.org/try-the-last-internet-kermit-server/) (from 2023)
   - [The quux.org Kermit Server](https://www.complete.org/quux-org-kermit-server/)
@@ -34,7 +34,7 @@ still be found on Amazon.
 - [About Kermit](https://kermitproject.org/kermit.html)
 - [C-Kermit 9.0 installation instructions for Unix](https://www.kermitproject.org/ckuins.html), still roughly applicable except for the first three sections which have dated downloading information
 - [C-Kermit tutorial](https://www.kermitproject.org/ckututor.html)
-- [C-Kermit scripting](ckermit/scripting)
+- [C-Kermit scripting](../ckermit/scripting)
 - [Kermit online books and articles](https://www.kermitproject.org/booksonline.html)
   - The [Using C-Kermit Book and Supplements](https://www.kermitproject.org/ckbindex.html)
   
