@@ -12,7 +12,7 @@ Here you can find all the implementations of Kermit we know about, modern and an
 
 ## Modern C-Kermit
 
-Modern [C-Kermit](ckermit), which is primarily for Unix-type operating systems (Linux, macOS, *BSD, and so forth), can be found on the [C-Kermit Github releases page](https://github.com/OpenKermit/ckermit/releases/new).  Binaries are automatically built for major modern operating systems.  You can also clone the Git source tree from <https://github.com/openkermit/ckermit>.
+Modern [C-Kermit](ckermit), which is primarily for Unix-type operating systems (Linux, macOS, *BSD, and so forth), can be found on the [C-Kermit Github releases page](https://github.com/OpenKermit/ckermit/releases/).  Binaries are automatically built for major modern operating systems.  You can also clone the Git source tree from <https://github.com/openkermit/ckermit>.
 
 The other active Kermit project is [Kermit 95](https://davidrg.github.io/ckwin/), also known as ckwin.  Kermit 95 is a fork of C-Kermit providing software for 32- and 64-bit Windows plus 32-bit OS/2.  Downloads for Windows and OS/2 can be found on the [Windows Kermit Github releases page](https://github.com/davidrg/ckwin/releases).
 
