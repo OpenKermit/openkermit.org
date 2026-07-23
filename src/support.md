@@ -1,10 +1,12 @@
 +++
 title = "Kermit Support"
 author = ["John Goerzen"]
-slug = "faq"
+slug = "support"
 tags = ["public"]
 draft = false
 +++
+
+# Kermit Support
 
 Before asking for help or reporting a bug, please make sure to consult the [documentation](doc) and [FAQ](faq).
 

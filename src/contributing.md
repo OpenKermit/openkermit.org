@@ -1,10 +1,12 @@
 +++
 title = "Contributing to Kermit"
 author = ["John Goerzen"]
-slug = "faq"
+slug = "contributing"
 tags = ["public"]
 draft = false
 +++
+
+# Contributing to Open Kermit
 
 Contributions to Open Kermit are welcome!  In fact, "open" signifies just that.
 

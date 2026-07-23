@@ -1,10 +1,12 @@
 +++
-title = "Kermit Downloads"
+title = "Kermit Downloads and Installation"
 author = ["John Goerzen"]
 slug = "downloads"
 tags = ["public"]
 draft = false
 +++
+
+# Kermit Downloads and Installation
 
 Here you can find all the implementations of Kermit we know about, modern and ancient.
 
@@ -24,24 +26,19 @@ For modern C-Kermit, binaries are built for:
 - macOS
 - FreeBSD, NetBSD, and OpenBSD
 
-Except for macOS, all other platforms build binaries for both x86-64 (amd64) and
-64-bit ARM (arm64).  In almost all cases, you will want the amd64 version.
+MacOS binaries are build for 64-bit ARM (arm64), which is the current hardware
+standard for Macs.  Linux binaries are built for x86-64 (amd64) and 64-bit ARM
+(arm64).  In almost all cases, you will want the amd64 version.  (arm64 is for
+things like Raspberry Pi.)  BSD binaries are built exclusively for x86-64
+(amd64).
 
-Linux binaries are additionally available in a static build, linked against musl
-libc.  These have no dependencies from the running system, and thus should be
-portable to many versions and distributions of Linux in the chosen architecture.
-However, since they do not use the system's libraries (such as OpenSSL), they
-don't benefit from security updates that your distribution may make to system
-libraries like OpenSSL.  Therefore, I recommend not using SSL facilities on the
-static binaries.  (Very few people use SSL in Kermit these days anyhow)  The
-static binaries are helpful for bootstrapping connectivity to a new (or old!)
-system, for instance.
-
-While the statically-linked version does have ncurses built in, C-Kermit
-degrades gracefully if you lack a terminfo database.  Therefore, it is a truly
-standalone binary.
+See the [platform-specific notes](platforms) for details on which specific OS
+version was used to build individual binaries, as well as notes on the Linux
+statically-linked binaries.
 
 ### Verification
+
+Binaries 
 
 Once you've downloaded a binary, you can run:
 
@@ -51,15 +48,17 @@ Compare it to the SHA256SUMS file to ensure your download wasn't corrupted.
 
 ### Installation
 
-Two commands will do it:
+Just unpack the tarball:
 
 ```
-mv kermit-platform-version kermit
-chmod a+x kermit
+tar -zxvf ckermit-*.tar.gz
 ```
 
-The first renames whatever you downloaded to `kermit`, and the second marks it executable.  I recommend you now put it in some location on your `$PATH`, such as `/usr/local/bin`.
+I recommend you now copy the extracted kermit binary to some location on your `$PATH`, such as `/usr/local/bin`.
 
+Before running kermit, please check out the [platform-specific nodes](platforms)
+page for specific notes about your system.  This may help you if you encounter
+any issues at startup.
 
 ## Historical and Other Platforms
 
@@ -71,4 +70,4 @@ The _software_ contains an implementation of the protocol.  Some implementations
 
 C-Kermit itself was and is ported to many different platforms, including NeXT, VMS, Cray Unicos, SunOS, Solaris, and the list goes on.  Most of these are Unix platforms, but not all.
 
-There are also many implementations of Kermit that were never derived from the C-Kermit codebase.  
+There are also many implementations of Kermit that were never derived from the C-Kermit codebase.

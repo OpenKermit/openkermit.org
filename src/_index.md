@@ -16,7 +16,7 @@ Here are some starting points:
 
 - [Getting Kermit and Downloads](downloads), including links to Github source and binaries.  This will guide you to downloads for both modern and historical platforms.
 - [Documentation](doc)
-- [Getting Started](ckermit/getting-started)
+- [Getting Started: Intro and Tour](ckermit/intro)
 - [Support and Forum](support)
 - [History and Mirrors](history)
 - [Contributing](contributing)

@@ -6,6 +6,10 @@ tags = ["public"]
 draft = false
 +++
 
+# Kermit Documentation
+
+This page serves as an index to the available documentation about Kermit.
+
 ## From Open Kermit and John Goerzen
 
 These are the latest and most up-to-date documents.

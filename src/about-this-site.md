@@ -6,7 +6,7 @@ tags = ["public"]
 draft = false
 +++
 
-## Web site {#web-site}
+# About This Site
 
 For the web, searching is based on [this example by Edd Turtle](https://makewithhugo.com/add-search-to-a-hugo-site/), though with some bugfixes.  It is done client-side by the [Fuse.js](https://fusejs.io/) lightweight searching library and the [mark.js keyword highlighter](https://markjs.io/).
 

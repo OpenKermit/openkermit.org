@@ -6,6 +6,8 @@ tags = ["public"]
 draft = false
 +++
 
+# Kermit FAQ
+
 These are frequently asked questions about Kermit and [C-Kermit](ckermit).
 
 ## What is C-Kermit and how does it differ from Kermit?
@@ -14,7 +16,7 @@ C-Kermit is a communications package.  It has a text UI, a portable [scripting
 language](scripting) (similar in concept to the shell, but with built-in
 screen-scraping automation like expect and built-in file transfer), an
 implementation of the Kermit file transfer protocol protocol, network client and
-server, serial port interface, [BBS client](ckermit/bbs), and more.  Kermit runs
+server, serial port interface, [BBS client](bbs), and more.  Kermit runs
 on hundreds of platforms, from the long-dead computers of the 1970s, pocket
 calculators of the 1990s, and  modern desktop and mobile OSs.
 
@@ -52,7 +54,8 @@ had previously been maintaining and distributing security patches to
 distributions, and this was getting unwieldy.  The modern evolution included
 writing a test suite, proper CI, compatibility fixes for modern platforms,
 hosting on Github, and a website (this one) that is easy for a community to
-maintain.  You can see all the work for C-Kermit 11 in the [changelog](ckermit/changelog).
+maintain.  You can see all the work for C-Kermit 11 in the
+[changelog](changelog).
 
 Both Columbia and Kermit Project's websites continue to be operational.  With
 Frank's permission, John also operates mirrors of the Columbia and Kermit
@@ -160,6 +163,10 @@ it remains included in a number of Linux distributions and BSD port trees.
 E-Kermit was designed for use in embedded devices, firmware, and so forth.  It
 is not actively maintained, but likely remains useful for the purpose.  For more
 information, see <https://www.kermitproject.org/ek.html>.
+
+## I'm having weird problems on NetBSD
+
+See the note in [platform-specific notes](platforms).
 
 ## Older questions
 

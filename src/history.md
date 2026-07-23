@@ -1,16 +1,18 @@
 +++
 title = "History of Kermit"
 author = ["John Goerzen"]
-slug = "faq"
+slug = "history"
 tags = ["public"]
 draft = false
 +++
 
+# History of Kermit
+
 The history of Kermit is a topic that has literally filled books, articles, and reports.  This page is intended to give you an overview and a pointer to places where you can learn more.
 
-I need to write more here yet.  For now, consult the [FAQ](faq) for more on the relationship between Columbia University, the Kermit Project, and Open Kermit.
+I will eventually add a more cohesive narrative to this page.  For now, consult the [FAQ](faq) for more on the relationship between Columbia University, the Kermit Project, and Open Kermit.
 
-# Additional References
+## Additional References
 
 - [Wikipedia page on Kermit (protocol)](https://en.wikipedia.org/wiki/Kermit_(protocol))
 - [Kermit project timeline](https://kermitproject.org/whatsnew.html)
