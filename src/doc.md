@@ -19,6 +19,7 @@ These are the latest and most up-to-date documents.
 - [C-Kermit docs and notes](ckermit)
 - [C-Kermit reference](../ckermit/help-reference), which is auto-generated from the C-Kermit source and help text available within C-Kermit
 - [C-Kermit scripting](../ckermit/scripting), which includes links to some amazing example scripts
+- More than you wanted to know about [C-Kermit's permissions model](../ckermit/permissions)
 - John Goerzen's pages about IKSD, the Internet Kermit Server Daemon, all offsite on www.complete.org:
   - [Try the Last Internet Kermit Server](https://www.complete.org/try-the-last-internet-kermit-server/) (from 2023)
   - [The quux.org Kermit Server](https://www.complete.org/quux-org-kermit-server/)
