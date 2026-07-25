@@ -18,6 +18,8 @@ The other active Kermit project is [Kermit 95](https://davidrg.github.io/ckwin/)
 
 Vanilla C-Kermit uses operating system facilities to provide such things as SSH and terminal emulation.  These have historically not been built in to Windows or OS/2, so Kermit 95 is a GUI application providing its own terminal emulation and ssh client.
 
+If you already have a version of Kermit, you can use the native Kermit protocol to download Kermit!  See the instructions at [downloading Kermit with Kermit](downloads-iksd).
+
 ### Selecting binaries
 
 For modern C-Kermit, binaries are built for:
