@@ -120,7 +120,7 @@ Let's download a C-Kermit release.
 -rw-rw-r--   3249045  2026-07-24 00:07:08  ckermit-v11.0.502.zip
 -rw-rw-r--      1012  2026-07-24 00:07:10  SHA256SUMS
 (~/mirrors/openkermit/ckermit-releases/v11.0.502/) IKSD>send ckermit-linux-amd64-static-11.0.502.tar.gz
-�Return to your local Kermit and give a RECEIVE command.
+Return to your local Kermit and give a RECEIVE command.
 
 KERMIT READY TO SEND...
 ...
