@@ -50,14 +50,14 @@ cp -r external/ckermit/doc content/ckermit
 # content/, so Hugo defaults their Type to "page" and the block never
 # shows. Pages under content/ckermit default to Type "ckermit" instead
 # (the section name), so without this override they'd show that block.
-for f in content/ckermit/*.md; do
+find content/ckermit -name '*.md' | while read -r f; do
   base=$(basename "$f" .md)
   title=$(grep -m1 '^# ' "$f" | sed -E 's/^# +//')
   slug=""
   extra=""
   if [ "$base" = "README" ]; then
     # README.md becomes the section index (_index.md below). Its URL
-    # (/ckermit/) comes from the directory, not a slug, so don't set one.
+    # comes from the directory, not a slug, so don't set one.
     # Force the single-page layout so Hugo renders the README content
     # itself instead of its auto-generated list of child pages.
     extra='
@@ -80,15 +80,20 @@ slug = \"$base\""
   mv "$tmp" "$f"
 done
 
-# Now perform any edits that impact contact/ckermit or all of content/.
-mv content/ckermit/README.md content/ckermit/_index.md
+# Now perform any edits that impact content/ckermit or all of content/.
+find content/ckermit -name 'README.md' | while read -r f; do
+  mv "$f" "${f%README.md}_index.md"
+done
 
 # The ckermit docs were written for Github Markdown and link directly to
 # other .md files, e.g. [x](help-reference.md) or [x](help-reference.md#anchor).
 # Convert these to Hugo relref shortcodes too.
 find content/ckermit -name '*.md' -exec \
-    sed -i -E -e 's/\]\(([A-Za-z0-9_-]+)\.md#([A-Za-z0-9_-]+)\)/]({{< relref "\1">}}#\2)/g' \
-    -e 's/\]\(([A-Za-z0-9_-]+)\.md\)/]({{< relref "\1">}})/g' {} +
+    sed -i -E \
+    -e 's/\]\(([A-Za-z0-9_/-]+)\/README\.md#([A-Za-z0-9_-]+)\)/]({{< relref "\1">}}#\2)/g' \
+    -e 's/\]\(([A-Za-z0-9_/-]+)\/README\.md\)/]({{< relref "\1">}})/g' \
+    -e 's/\]\(([A-Za-z0-9_/-]+)\.md#([A-Za-z0-9_-]+)\)/]({{< relref "\1">}}#\2)/g' \
+    -e 's/\]\(([A-Za-z0-9_/-]+)\.md\)/]({{< relref "\1">}})/g' {} +
 
 # The ckermit docs also carry full links back to this site (needed so the
 # links work when the docs are viewed on Github), e.g.
@@ -100,9 +105,9 @@ find content/ckermit -name '*.md' -exec \
 find content/ckermit -name '*.md' -exec \
     sed -i -E \
     -e 's#<https://www\.openkermit\.org/>#[https://www.openkermit.org/]({{< relref "/" >}})#g' \
-    -e 's#<(https://www\.openkermit\.org/([A-Za-z0-9_-]+)/?)>#[\1]({{< relref "\2" >}})#g' \
+    -e 's#<(https://www\.openkermit\.org/([A-Za-z0-9_/-]+)/?)>#[\1]({{< relref "\2" >}})#g' \
     -e 's#\]\(https://www\.openkermit\.org/\)#]({{< relref "/" >}})#g' \
-    -e 's#\]\(https://www\.openkermit\.org/([A-Za-z0-9_-]+)/?\)#]({{< relref "\1" >}})#g' \
+    -e 's#\]\(https://www\.openkermit\.org/([A-Za-z0-9_/-]+)/?\)#]({{< relref "\1" >}})#g' \
     {} +
 
 # The ckermit docs also embed images that live alongside the .md source,
