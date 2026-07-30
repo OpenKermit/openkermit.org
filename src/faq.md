@@ -149,8 +149,9 @@ end is ancient, or you need to do some [tuning](ckermit/tuning).
 G-Kermit was released in 1995 under the GNU GPL Open Source license.  It is a
 small, command-line-only program, with no scripting language, no interactive
 interface (like C-Kermit's internal CLI), etc.  Part of the reason for its
-existence was to provide software that could be freely used (since C-Kermit was
-a commercial product back then).  Another part was to make a smaller Kermit.
+existence was to provide software that could be freely used (C-Kermit's license
+at the time caused trouble for some, including Linux distributions).  Another
+goal was to make a smaller Kermit.
 
 The Open Sourcing of C-Kermit in 2011 and the increased capabilities of today's
 hardware means that C-Kermit needs very few resources by modern standards and
