@@ -15,6 +15,7 @@ This page serves as an index to the available documentation about Kermit.
 These are the latest and most up-to-date documents.
 
 - [Kermit Introduction and Tour](../ckermit/intro), contains a feature list, description of Kermit modes, a tour of Kermit as a ssh wrapper, tuning, and so forth.
+- [Kermit FAQ](faq)
 - [C-Kermit downloads](downloads)
 - [C-Kermit docs and notes](ckermit)
 - [C-Kermit reference](../ckermit/help-reference), which is auto-generated from the C-Kermit source and help text available within C-Kermit
