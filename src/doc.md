@@ -17,7 +17,7 @@ These are the latest and most up-to-date documents.
 - [Kermit Introduction and Tour](../ckermit/intro), contains a feature list, description of Kermit modes, a tour of Kermit as a ssh wrapper, tuning, and so forth.
 - [Kermit FAQ](faq)
 - [C-Kermit downloads](downloads)
-- [C-Kermit docs and notes](ckermit)
+- [C-Kermit docs and notes](ckermit), which is the main page linking you to many topics relating to running C-Kermit
 - [C-Kermit reference](../ckermit/help-reference), which is auto-generated from the C-Kermit source and help text available within C-Kermit
 - [C-Kermit scripting](../ckermit/scripting), which includes links to some amazing example scripts
 - More than you wanted to know about [C-Kermit's permissions model](../ckermit/permissions)
